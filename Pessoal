@@ -1,0 +1,23 @@
+using System;
+
+namespace Principal
+{
+    class Profissional
+    {
+        //atributos
+        public string tarefa;
+        public string descricao;
+        public string categoria;
+        public string pronto;
+
+        public Profissional()
+        {
+        }
+
+        //métodos
+        public void provarExistencia()
+        {
+            Console.WriteLine("Pessoal");
+        }
+    }
+}
