@@ -1,0 +1,69 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Pessoa
+{
+    class Principal
+    {
+        public Principal()
+        {
+        }
+
+        //método principal
+        static void Main(string[] args)
+        {
+            Tarefas pessoal = new Tarefas();
+            Tarefas profissional = new Tarefas();
+            Tarefas projetos = new Tarefas();
+
+            pessoal.provarExistencia();
+            profissional.provarExistencia();
+
+            pessoal.tarefa = "Pintar as unhas";
+            pessoal.descricao = "Sair com minha irmã";
+            pessoal.categoria = 2;
+            pessoal.pronto = false;
+
+            profissional.tarefa = "Desenvolve em python";
+            profissional.descricao = "Resolver trabalho do  TCC";
+            profissional.categoria = 2;
+            profissional.pronto = true;
+
+            projetos.tarefa = "Investimentos";
+            projetos.descricao = "Automação de nota fiscal";
+            projetos.categoria = 2;
+            projetos.pronto = false;
+
+
+            Console.WriteLine(pessoal.tarefa);
+            Console.WriteLine(pessoal.descricao);
+            Console.WriteLine(pessoal.categoria);
+            Console.WriteLine(pessoal.pronto);
+
+            Console.WriteLine(profissional.tarefa);
+            Console.WriteLine(profissional.descricao);
+            Console.WriteLine(profissional.categoria);
+            Console.WriteLine(profissional.pronto);
+
+            Console.WriteLine(projetos.tarefa);
+            Console.WriteLine(projetos.descricao);
+            Console.WriteLine(projetos.categoria);
+            Console.WriteLine(projetos.pronto);
+
+        }
+
+        private class Tarefas
+        {
+            internal string descricao;
+            internal string tarefa;
+            internal int categoria;
+            internal bool pronto;
+
+            internal void provarExistencia()
+            {
+                throw new NotImplementedException();
+            }
+        }
+    }
+}
