@@ -1,0 +1,39 @@
+ using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Pessoa
+{
+    class Principal
+    {
+        //método principal
+        static void Main(string[] args)
+        {
+            Pessoa pessoa1 = new Pessoa();
+            Pessoa pessoa2 = new Pessoa();
+
+            pessoa1.provarExistencia();
+            pessoa2.provarExistencia();
+
+            pessoa1.nome = "Giu";
+            pessoa1.email = "_giu.conti";
+            pessoa1.login = "giu.linda";
+            pessoa1.senha = "****";
+
+            pessoa2.nome = "Sei@la";
+            pessoa2.email = "amem";
+            pessoa2.login = "avisa";
+            pessoa2.senha = "senha";
+
+            Console.WriteLine(pessoa1.nome);
+            Console.WriteLine(pessoa1.email);
+            Console.WriteLine(pessoa1.login);
+            Console.WriteLine(pessoa1.senha);
+
+            Console.WriteLine(pessoa2.nome);
+            Console.WriteLine(pessoa2.email);
+            Console.WriteLine(pessoa2.login);
+            Console.WriteLine(pessoa2.senha);
+        }
+    }
+}
